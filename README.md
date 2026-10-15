@@ -1,0 +1,3 @@
+SSA (Singular Spectrum Analysis) is a method for analyzing time series that decomposes a series into interpretable components: trend, periodic oscillations, and noise. The core idea is to embed a one-dimensional series into a trajectory matrix, then apply singular value decomposition to it. The resulting components are grouped, and from them a cleaned series is reconstructed or a forecast is built.
+
+The method requires no model of the series and handles non-stationary data well, where classical methods like ARIMA often fail. SSA is used for trend extraction, periodicity detection, smoothing, gap filling, and forecasting. There are extensions: MSSA for multivariate series, 2D-SSA for images, Toeplitz SSA for stationary signals, and Complex SSA for complex-valued data.
