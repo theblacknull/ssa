@@ -1,4 +1,4 @@
-//! Second round of Rssa parity checks (`bench/rssa/make_reference_ext.R`):
+//! Second round of Rssa parity checks (`ssa-rust/benchmarks/make_reference_ext.R`):
 //! circular / shaped / nD-SSA, MSSA lists, PSSA forecasts, simultaneous
 //! gap filling, CSSA extras, hmatr, forecast and I-OSSA diagnostics.
 

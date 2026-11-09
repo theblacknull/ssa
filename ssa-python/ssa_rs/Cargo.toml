@@ -1,0 +1,21 @@
+[package]
+name = "ssa_rs_py"
+version = "0.1.0"
+edition = "2024"
+license = "GPL-3.0-or-later"
+description = "Python bindings of ssa_rs (drop-in accelerated py-ssa-lib)"
+
+[lib]
+name = "_core"
+crate-type = ["cdylib"]
+
+[dependencies]
+faer = "0.24.4"
+numpy = "0.29.0"
+pyo3 = { version = "0.29.3", features = ["extension-module", "abi3-py310"] }
+ssa_rs = { version = "0.1.0", path = "../../ssa-rust" }
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1

@@ -1,4 +1,4 @@
-//! Timings of ssa_rs on the workloads of `bench/rssa/bench_rssa_ext.R`.
+//! Timings of ssa_rs on the workloads of `ssa-rust/benchmarks/bench_rssa_ext.R`.
 //!
 //! cargo run --release --example bench_rssa_ext -- out.json
 

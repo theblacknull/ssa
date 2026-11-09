@@ -1,5 +1,5 @@
 //! Parity of the Rssa ports against results computed by Rssa 1.1 itself
-//! (`bench/rssa/make_reference.R` -> `tests/data/rssa_ref.json`).
+//! (`ssa-rust/benchmarks/make_reference.R` -> `tests/data/rssa_ref.json`).
 
 use faer::Mat;
 use serde_json::Value;

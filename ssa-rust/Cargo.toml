@@ -13,3 +13,12 @@ rustfft = "6"
 
 [dev-dependencies]
 serde_json = "1.0.154"
+
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "unwind"
+
+[profile.bench]
+inherits = "release"
